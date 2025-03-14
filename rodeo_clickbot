@@ -58,6 +58,6 @@ tmr_date = str(date.today() + datetime.timedelta(1))
 datefield = driver.find_element(By.ID, 'fechaServicio')
 
 # select date value from calendar object
-datefield.send_keys('2025-03-14')
+datefield.send_keys(tmr_date)
 # ActionChains(driver).move_to_element(datefield).click().send_keys(tmr_date).perform()
 
